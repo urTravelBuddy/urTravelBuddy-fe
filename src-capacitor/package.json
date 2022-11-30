@@ -1,0 +1,11 @@
+{
+  "name": "urtravelbuddy",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "author": "Dario Cascone",
+  "private": true,
+  "dependencies": {
+    "@capacitor/cli": "^2.0.0",
+    "@capacitor/core": "^2.0.0"
+  }
+}
