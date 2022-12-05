@@ -1,0 +1,10 @@
+{
+  "appId": "org.ur.travel.buddy",
+  "appName": "Ur Travel Buddy",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "server": {
+    "url": "http://172.20.11.89:8080"
+  }
+}

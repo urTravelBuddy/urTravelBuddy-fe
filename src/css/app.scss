@@ -1,1 +1,29 @@
 // app global css in SCSS form
+@font-face {
+  font-family: nunitofont;
+  src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: 'nunitofont';
+}
+
+.bg-layout {
+  background-color: #f6f9f2;
+}
+
+.home__dialog {
+  height: 60vh !important;
+  border-radius: 60px 60px 0px 0px !important;
+}
+.home__dialog--text {
+  font-size: 1.75rem;
+}
+
+.home__dialog--maximized {
+  height: 90vh !important;
+  max-height: none !important;
+  transition: height 500ms;
+  border-radius: 60px 60px 0px 0px !important;
+}
+
