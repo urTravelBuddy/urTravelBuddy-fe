@@ -16,7 +16,7 @@ const signIn = () => {
         LOGO
       </h4>
       <div class="home__dialog--text text-center text-secondary q-px-lg">
-        Organizza il tuo viaggio con i tuoi amici
+        {{ $t('welcomeMessage') }}
       </div>
       <div class="full-width text-right q-pr-lg">
         <q-btn
@@ -24,9 +24,9 @@ const signIn = () => {
           class="bg-primary text-white q-px-lg"
           push
           rounded
+          :label="$t('start')"
           @click="signIn()"
         >
-          Inizia
         </q-btn>
       </div>
     </div>
