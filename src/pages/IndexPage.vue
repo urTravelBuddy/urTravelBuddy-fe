@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import WelcomeCardComponent from 'components/WelcomeCardComponent'
 import SignInCardComponent from 'components/SignInCardComponent'
 
-const component = WelcomeCardComponent
+let component = WelcomeCardComponent
 const isDialogOpen = ref(true)
 const isSeamless = ref(true)
 const dialogClass = ref('home__dialog')
@@ -11,7 +11,7 @@ const dialogClass = ref('home__dialog')
 const signIn = () => {
   dialogClass.value = 'home__dialog--maximized'
   isSeamless.value = false
-  component.value = SignInCardComponent
+  component = SignInCardComponent
 }
 
 </script>
@@ -20,12 +20,15 @@ const signIn = () => {
   </q-page>
   <q-dialog
     position="bottom"
+    persistent
     :seamless="isSeamless"
     full-width
     transition-duration="1000"
     v-model="isDialogOpen"
   >
-    <component :is=component :dialog-class="dialogClass" @signIn="signIn()"></component>
+    <q-card bordered :class="dialogClass">
+      <component :is=component @signIn="signIn()" class="no-padding"></component>
+    </q-card>
   </q-dialog>
 </template>
 

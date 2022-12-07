@@ -13,7 +13,7 @@
 }
 
 .home__dialog {
-  height: 60vh !important;
+  height: 60vh;
   border-radius: 60px 60px 0px 0px !important;
 }
 .home__dialog--text {
@@ -21,7 +21,7 @@
 }
 
 .home__dialog--maximized {
-  height: 90vh !important;
+  height: 90vh;
   max-height: none !important;
   transition: height 500ms;
   border-radius: 60px 60px 0px 0px !important;
